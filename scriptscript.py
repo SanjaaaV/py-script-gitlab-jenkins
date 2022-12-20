@@ -52,7 +52,6 @@ def foo():
       issueja = config_data3['issue_key']
       issue = jira.issue(issueja)
       jira.add_comment(issue, f"Pipeline result: {resultt}. GitLab-Merge request can be accepted.")
-      #print(f"Jira comment - CREATED - issue->{issueja}")
 
    
    return "OK"
