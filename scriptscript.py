@@ -35,11 +35,10 @@ def foo():
       item = job.build()
       while not item.get_build():
          time.sleep(1)
-      global build
       build = item.get_build()
       while build.building:
          time.sleep(1)
-      while build.result == None:
+      while build.result is None:
          time.sleep(1)
       print (build.result)
       resultt = build.result
